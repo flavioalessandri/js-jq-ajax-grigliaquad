@@ -8,7 +8,8 @@ function addEventClick(){
 
 function selectedOnClick(grid){
   $(document).on("click", 'div.square',function(){
-
+    var object = {};
+    var target = $(this);
     $.ajax(
       {
         url: 'https://flynn.boolean.careers/exercises/api/random/int',
@@ -20,12 +21,31 @@ function selectedOnClick(grid){
 
           if (success){
             if(numero <= 5){
+              // var target = $(this);
+              var object ={
+                'numero' : numero,
+                'color': 'yellow'
+              };
+
+
+              target.append('<span>' + object['numero'] + '</span>');
+              target.addClass(object['color']);
+
+              console.log("l'oggetto", object);
               console.log("il numero è:",numero);
 
             } else {
+              // var target = $(this);
+              var object ={
+                'numero' : numero,
+                'color': 'green'
+                };
+
+              target.append('<span>' + object['numero'] + '</span>');
+              target.addClass(object['color']);
+
+              console.log("l'oggetto", object);
               console.log("il numero è:",numero);
-
-
             }
           }
         },
@@ -36,8 +56,8 @@ function selectedOnClick(grid){
         }
     }
   );
-
-
+    alert(target,"mio target");
+    // $(this).append(target['numero']);
 
 });
 }

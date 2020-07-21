@@ -44,9 +44,22 @@ body{
 }
 
 .yellow{
+  position: relative;
   background-color: yellow;
 }
 
+span{
+  position: absolute;
+  top:50%;
+  right:50%;
+  transform: translate(50%,-50%);
+  display: inline-block;
+  width:20px;
+  height:20px;
+  background-color: red;
+}
+
 .green{
+  position: relative;
   background-color: lightgreen;
 }
