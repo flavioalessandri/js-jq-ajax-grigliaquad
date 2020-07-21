@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* @font-face {
+  font-family:MyFirstFont;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/BasierCircle-Regular.woff') format('woff');
+} */
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color:black;
+}
+
+.odd{
+  text-align: center;
+
+  margin:10px;
+  height:20px;
+  padding:20px;
+  border-radius: 5px;
+
+  background-color: lightgreen;
+}
+
+
+.even{
+  text-align: center;
+
+  margin:10px;
+  height:20px;
+  padding:20px;
+  border-radius: 5px;
+  background-color: coral;
+
+}
+
+.numeri{
+  display: flex;
+  justify-content: flex-start;
+}

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family:MyFirstFont;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/BasierCircle-Regular.woff') format('woff');
+}
+
+body{
+  font-family: MyFirstFont, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color:black;
+}
+
+#container{
+  margin:40px auto;
+  max-width:420px;
+  max-height:500px;
+  background-color: blue;
+}
+.square{
+  display: inline-block;
+  text-align: center;
+  width:60px;
+  height:60px;
+  border:1px solid black;
+  margin:4px;
+}
+
+.square:hover{
+  cursor: pointer;
+}
+
+
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.green{
+  background-color: lightgreen;
+}
