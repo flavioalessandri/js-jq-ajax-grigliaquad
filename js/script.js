@@ -2,7 +2,7 @@ function addEventClick(){
   console.log("addevent");
   var square = $('div.square');
   var grid = elemGenerator(square);
-  var clicked_square = selectedOnClick(grid);
+  selectedOnClick(grid);
 
 }
 
@@ -26,7 +26,6 @@ function selectedOnClick(grid){
                 'numero' : numero,
                 'color': 'yellow'
               };
-
 
               target.append('<span>' + object['numero'] + '</span>');
               target.addClass(object['color']);
@@ -56,9 +55,6 @@ function selectedOnClick(grid){
         }
     }
   );
-    alert(target,"mio target");
-    // $(this).append(target['numero']);
-
 });
 }
 
