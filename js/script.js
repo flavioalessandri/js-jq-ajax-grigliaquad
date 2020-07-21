@@ -20,41 +20,35 @@ function selectedOnClick(grid){
           var success = data['success'];
 
           if (success){
+
             if(numero <= 5){
               // var target = $(this);
               var object ={
                 'numero' : numero,
                 'color': 'yellow'
               };
-
-              target.append('<span>' + object['numero'] + '</span>');
-              target.addClass(object['color']);
-
-              console.log("l'oggetto", object);
-              console.log("il numero è:",numero);
-
             } else {
               // var target = $(this);
               var object ={
                 'numero' : numero,
                 'color': 'green'
                 };
-
-              target.append('<span>' + object['numero'] + '</span>');
-              target.addClass(object['color']);
-
-              console.log("l'oggetto", object);
-              console.log("il numero è:",numero);
             }
+
+            target.append('<span>' + object['numero'] + '</span>');
+            target.addClass(object['color']);
+
+            console.log("l'oggetto", object);
+            console.log("il numero è:",numero);
           }
         },
+
         error: function(request , state, error,){
           console.log(request, "request");
           console.log(state, "state");
           console.log("errore" , error);
-        }
-    }
-  );
+      }
+  });
 });
 }
 
